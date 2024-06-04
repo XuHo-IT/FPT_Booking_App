@@ -9,9 +9,17 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Login Page</title>
     </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+    <br><br>
+            <jsp:include page="header.jsp" />
+
+    <form action="InsertController" method="POST">
+        <label>Name:</label>
+        <input type="text" name="name" required/><br><br>
+        <label>Password:</label>
+        <input type="password" name="password" required/><br><br>
+        <input type="submit" value="Login" />
+        <a href="register.jsp" target="#">Register</a>
+    </form>
 </html>
