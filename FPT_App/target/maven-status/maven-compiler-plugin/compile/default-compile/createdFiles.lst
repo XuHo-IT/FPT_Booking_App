@@ -1,6 +1,0 @@
-com\mycompany\fpt_app\JakartaRestConfiguration.class
-com\mycompany\fpt_app\resources\JakartaEE10Resource.class
-Model\User.class
-DBConnect\DBConnect.class
-Controller\LoginController.class
-DAO\Login.class
