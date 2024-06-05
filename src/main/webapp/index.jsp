@@ -90,7 +90,7 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-globe text-primary mb-4"></i>
                             <h5>Booking rooms</h5>
-                            <p>Rooms are clean and have lolis to checker</p>
+                            <p>Available.</p>
                         </div>
                     </div>
                 </div>
