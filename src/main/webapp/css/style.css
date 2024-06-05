@@ -252,16 +252,16 @@
 }
 
 
-/*** Package ***/
-.package-item {
+/*** Room ***/
+.room-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
 }
 
-.package-item img {
+.room-item img {
     transition: .5s;
 }
 
-.package-item:hover img {
+.room-item:hover img {
     transform: scale(1.1);
 }
 
