@@ -5,6 +5,8 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,11 +14,18 @@
         <title>Login Page</title>
     </head>
     <br><br>
-            <jsp:include page="header.jsp" />
-
-    <form action="InsertController" method="POST">
-        <label>Name:</label>
-        <input type="text" name="name" required/><br><br>
+    <jsp:include page="header.jsp" />
+    <c:if test="${not empty failedMsg}">
+        <h5 class="text-center text-danger">${failedMsg}</h5>
+        <c:remove var="failedMsg" scope="session"/>
+    </c:if>
+    <c:if test="${not empty succMsg}">
+        <h5 class="text-center text-success">${succMsg}</h5>
+        <c:remove var="failedMsg" scope="session"/>
+    </c:if>
+    <form action="LoginController" method="POST">
+        <label>Email:</label>
+        <input type="text" name="email" required/><br><br>
         <label>Password:</label>
         <input type="password" name="password" required/><br><br>
         <input type="submit" value="Login" />
