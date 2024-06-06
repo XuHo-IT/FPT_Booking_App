@@ -6,7 +6,7 @@
     --dark: #14141F;
 }
 .main-color-web{
-    background:  linear-gradient(to right, #d1f7f5, #b0f3ff)   !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background:  linear-gradient(to right, #cbfefc, #b0f2ff)   !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
@@ -258,7 +258,7 @@
 
 /*** Room ***/
 .room-item {
-    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    box-shadow: 0.5 0.5 45px rgba(0, 34, 82, 0.08);
 }
 
 .room-item img {
