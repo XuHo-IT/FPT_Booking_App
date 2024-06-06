@@ -32,12 +32,16 @@ uri="http://java.sun.com/jsp/jstl/core"%> <%@page isELIgnored="false"%>
       height: 100vh;
       margin: -20px 0 50px;
     }
-    .heading-title{
-        font-size: 2em;
-        background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-background-clip: text;
--webkit-text-fill-color: transparent; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    .heading-title {
+      font-size: 2em;
+      margin-bottom: 1em;
+      background: linear-gradient(
+        to right,
+        #000428,
+        #004e92
+      ); 
+      background-clip: text;
+      -webkit-text-fill-color: transparent; 
     }
     h1 {
       font-weight: bold;
@@ -91,7 +95,7 @@ background-clip: text;
     button.ghost {
       background-color: transparent;
       border-color: #ffffff;
-      color:white;
+      color: white;
     }
 
     form {
@@ -276,9 +280,10 @@ background-clip: text;
       color: #3c97bf;
       text-decoration: none;
     }
+
   </style>
-  <body>
-    <h2 class="heading-title">Welcome to FPT Paradise!</h2>
+  <body style="background-image:linear-gradient(to bottom, #71c3fd, #8ceeff, #b2fdd1);">
+    <h1 class="heading-title">Welcome to FPT Paradise!</h1>
     <div class="container" id="container">
       <div class="form-container sign-up-container">
         <form action="#">
@@ -289,7 +294,7 @@ background-clip: text;
             <a href="#" class="social"><i class="fab fa-github"></i></a>
           </div>
           <span>or use your email for registration</span>
-          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Account" />
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
           <button>Sign Up</button>
@@ -306,7 +311,6 @@ background-clip: text;
           <span>or use your account</span>
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
-          <a href="#">Forgot your password?</a>
           <button>Sign In</button>
         </form>
       </div>
@@ -331,13 +335,8 @@ background-clip: text;
     <footer>
       <p>
         Created with <i class="fa fa-heart"></i> by
-        <a target="_blank" href="https://florin-pop.com">Florin Pop</a>
-        - Read how I created this and how you can join the challenge
-        <a
-          target="_blank"
-          href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/"
-          >here</a
-        >.
+        <a rel="noopener" target="_blank" href="https://github.com/XuHo-IT">Inspiration Team</a>
+        (Xuho, Chovy, Cunny, Ussasin.)
       </p>
     </footer>
   </body>
