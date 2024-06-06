@@ -461,31 +461,31 @@
         <div class="container">
             <div class="text-center">
                 <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
-                <h1 class="mb-5">Our Clients Say!!!</h1>
+                <h1 class="mb-5">Our Customers Feedback</h1>
             </div>
             <div class="owl-carousel testimonial-carousel position-relative">
                 <div class="testimonial-item bg-white text-center border p-4">
                     <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">John Doe</h5>
-                    <p>New York, USA</p>
+                    <h5 class="mb-0">Jeong "Chovy"</h5>
+                    <p>Busan, Korea</p>
                     <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
                 </div>
                 <div class="testimonial-item bg-white text-center border p-4">
                     <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">John Doe</h5>
-                    <p>New York, USA</p>
+                    <h5 class="mb-0">Lee Sang "Faker"</h5>
+                    <p>Seoul, Korea</p>
                     <p class="mt-2 mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
                 </div>
                 <div class="testimonial-item bg-white text-center border p-4">
                     <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">John Doe</h5>
-                    <p>New York, USA</p>
+                    <h5 class="mb-0">Ba "Teacher"</h5>
+                    <p>HoChiMinh, Viet Nam</p>
                     <p class="mt-2 mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
                 </div>
                 <div class="testimonial-item bg-white text-center border p-4">
                     <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">John Doe</h5>
-                    <p>New York, USA</p>
+                    <h5 class="mb-0">Min-hyeong "Gumayushi"</h5>
+                    <p>Seoul, Korea</p>
                     <p class="mt-2 mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
                 </div>
             </div>
