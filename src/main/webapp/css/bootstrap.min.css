@@ -97,6 +97,13 @@ h1,
     font-size: 2.5rem;
   }
 }
+
+
+.main-color-web{
+  background:  linear-gradient(to right, #d1f7f5, #b0f3ff)   !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 h2,
 .h2 {
   font-size: calc(1.325rem + 0.9vw);
@@ -6783,7 +6790,10 @@ fieldset:disabled .btn {
   word-break: break-word !important;
 }
 .text-primary {
-  color: #86b817 !important;
+  background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .text-secondary {
   color: #fe8800 !important;

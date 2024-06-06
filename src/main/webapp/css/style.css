@@ -5,7 +5,11 @@
     --light: #F5F5F5;
     --dark: #14141F;
 }
+.main-color-web{
+    background:  linear-gradient(to right, #d1f7f5, #b0f3ff)   !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
 .fw-medium {
     font-weight: 600 !important;
 }
