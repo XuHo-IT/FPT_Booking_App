@@ -9,25 +9,27 @@ package Model;
  * @author PC
  */
 public class Room {
-    private String roomId;
+    private int roomId;
     private String roomtype;
     private int capacity;
     private double price;
     private String status;
+    private String messages;
 
-    public Room(String roomId, String roomtype, int capacity, double price, String status) {
+    public Room(int roomId, String roomtype, int capacity, double price, String status, String messages) {
         this.roomId = roomId;
         this.roomtype = roomtype;
         this.capacity = capacity;
         this.price = price;
         this.status = status;
+        this.messages = messages;
     }
 
-    public String getRoomId() {
+    public int getRoomId() {
         return roomId;
     }
 
-    public void setRoomId(String roomId) {
+    public void setRoomId(int roomId) {
         this.roomId = roomId;
     }
 
@@ -63,10 +65,16 @@ public class Room {
         this.status = status;
     }
 
+    public String getMessages() {
+        return messages;
+    }
+
+    public void setMessages(String messages) {
+        this.messages = messages;
+    }
+
     @Override
     public String toString() {
-        return "Room{" + "roomId=" + roomId + ", roomtype=" + roomtype + ", capacity=" + capacity + ", price=" + price + ", status=" + status + '}';
+        return "Room{" + "roomId=" + roomId + ", roomtype=" + roomtype + ", capacity=" + capacity + ", price=" + price + ", status=" + status + ", messages=" + messages + '}';
     }
-    
-    
 }
