@@ -286,7 +286,7 @@ uri="http://java.sun.com/jsp/jstl/core"%> <%@page isELIgnored="false"%>
     <h1 class="heading-title">Welcome to FPT Paradise!</h1>
     <div class="container" id="container">
       <div class="form-container sign-up-container">
-        <form action="#">
+        <form action="RegisterController" method="post">
           <h1>Create Account</h1>
           <div class="social-container">
             <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -294,14 +294,14 @@ uri="http://java.sun.com/jsp/jstl/core"%> <%@page isELIgnored="false"%>
             <a href="#" class="social"><i class="fab fa-github"></i></a>
           </div>
           <span>or use your email for registration</span>
-          <input type="text" placeholder="Account" />
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
+          <input type="text" placeholder="Account" name="name"/>
+          <input type="email" placeholder="Email" name="email"/>
+          <input type="password" placeholder="Password" name="password"/>
           <button>Sign Up</button>
         </form>
       </div>
       <div class="form-container sign-in-container">
-        <form action="#">
+        <form action="LoginController" method="post">
           <h1>Sign in</h1>
           <div class="social-container">
             <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -309,8 +309,8 @@ uri="http://java.sun.com/jsp/jstl/core"%> <%@page isELIgnored="false"%>
             <a href="#" class="social"><i class="fab fa-github"></i></a>
           </div>
           <span>or use your account</span>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
+          <input type="email" placeholder="Email" name="email" />
+          <input type="password" placeholder="Password" name="password"/>
           <button>Sign In</button>
         </form>
       </div>
