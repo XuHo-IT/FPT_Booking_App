@@ -1,14 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 /********** Template CSS **********/
 :root {
     --primary: #86B817;
-    --secondary: #FE8800;
+    --secondary: #e07400;
     --light: #F5F5F5;
     --dark: #14141F;
 }
+/************************************************/
+.wrapper {
+	font-size: 1.5em;
+
+	&.invert {
+		span {
+			color: rgb(0, 17, 53);
+			
+			&::before {
+				-webkit-text-stroke: .1em var(--color);
+			}
+		}
+	}
+	
+	span {
+		--color: #0051ff;
+		font-family: Impact, 'Anton', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		font-weight: 700;
+		font-style: italic;
+		display: block;
+		position: absolute;
+		color: var(--color);
+
+		&::before, &::after {
+			content: attr(data-text);
+			display: block;
+			position: relative;
+			padding: 0 .19em;
+			z-index: 1;
+		}
+
+		&::before {
+			position: absolute;
+			-webkit-text-stroke: .1em rgb(4, 4, 5);
+			z-index: 0;
+		}
+		&:first-child {
+			transform: translate(-.255em, -.25em);
+		}
+		&:last-child {
+			--color: #ff6200;
+			transform: translate(.255em, .25em);
+		}
+	}
+}
+
+
+/************************************************/
 .main-color-web{
     background:  linear-gradient(to right, #cbfefc, #b0f2ff)   !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+}
+.btn-color{
+    background: linear-gradient(to right, #000428, #004e92); 
+}
+.btn-color:hover{
+    opacity:0.8
 }
 .fw-medium {
     font-weight: 600 !important;
