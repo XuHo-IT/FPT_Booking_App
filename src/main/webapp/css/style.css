@@ -64,6 +64,9 @@
 .btn-color:hover{
     opacity:0.8
 }
+.welcome-img{
+    box-shadow: 5px 5px 10.5px 2px rgb(3, 0, 50);
+}
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -242,43 +245,7 @@
 
 
 /*** Section Title ***/
-.section-title {
-    position: relative;
-    display: inline-block;
-    text-transform: uppercase;
-}
 
-.section-title::before {
-    position: absolute;
-    content: "";
-    width: calc(100% + 80px);
-    height: 2px;
-    top: 4px;
-    left: -40px;
-    background: var(--primary);
-    z-index: -1;
-}
-
-.section-title::after {
-    position: absolute;
-    content: "";
-    width: calc(100% + 120px);
-    height: 2px;
-    bottom: 5px;
-    left: -60px;
-    background: var(--primary);
-    z-index: -1;
-}
-
-.section-title.text-start::before {
-    width: calc(100% + 40px);
-    left: 0;
-}
-
-.section-title.text-start::after {
-    width: calc(100% + 60px);
-    left: 0;
-}
 
 
 /*** Service ***/
