@@ -53,7 +53,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #808b8d;
+  color: #080157;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -2525,7 +2525,7 @@ textarea.form-control.is-invalid {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
-  color: #808b8d;
+  color: #f1f6fd;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -2559,20 +2559,22 @@ fieldset:disabled .btn {
 }
 .btn-primary {
   color: #000;
-  background-color: #86b817;
-  border-color: #86b817;
+  background: linear-gradient(to right, #000428, #004e92);
+  border-color:rgb(7, 50, 203);
 }
 .btn-primary:hover {
   color: #000;
-  background-color: #98c33a;
-  border-color: #92bf2e;
+  background: linear-gradient(to right, #010953, #026ac5);
+  
+  border-color: rgb(89, 156, 244);
+
 }
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
   color: #000;
-  background-color: #98c33a;
-  border-color: #92bf2e;
-  box-shadow: 0 0 0 0.25rem rgba(114, 156, 20, 0.5);
+  background-color: linear-gradient(to right, #000428, #004e92);
+  border-color: linear-gradient(to right, #000428, #004e92);
+  box-shadow: 0 0 0 0.25rem rgb(0, 9, 91);
 }
 .btn-check:checked + .btn-primary,
 .btn-check:active + .btn-primary,
@@ -2580,21 +2582,22 @@ fieldset:disabled .btn {
 .btn-primary.active,
 .show > .btn-primary.dropdown-toggle {
   color: #000;
-  background-color: #9ec645;
-  border-color: #92bf2e;
+  background-color: linear-gradient(to right, #000428, #004e92);
+  border-color: linear-gradient(to right, #000428, #004e92);
+  opacity:0.5;
 }
 .btn-check:checked + .btn-primary:focus,
 .btn-check:active + .btn-primary:focus,
 .btn-primary:active:focus,
 .btn-primary.active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(114, 156, 20, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(0,9,91);
 }
 .btn-primary:disabled,
-.btn-primary.disabled {
+.btn-primary.disabled { 
   color: #000;
-  background-color: #86b817;
-  border-color: #86b817;
+  background-color: linear-gradient(to right, #000428, #004e92);
+  border-color: #004e92;
 }
 .btn-secondary {
   color: #000;
@@ -3584,7 +3587,7 @@ fieldset:disabled .btn {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #86b817;
+  color: rgb(17, 110, 233);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
 }
@@ -3595,7 +3598,7 @@ fieldset:disabled .btn {
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #6b9312;
+  color: rgb(89, 156, 244);
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -6794,7 +6797,6 @@ fieldset:disabled .btn {
 }
 .text-primary {
   background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
   background-clip: text;
   -webkit-text-fill-color: transparent; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

@@ -92,3 +92,17 @@
     
 })(jQuery);
 
+
+const serviceItems = document.querySelectorAll('.icon-hover-service');
+
+serviceItems.forEach(serviceItem => {
+  const icon = serviceItem.querySelector('i');
+
+  serviceItem.addEventListener('mouseover', () => {
+    icon.classList.remove('text-primary');
+  });
+
+  serviceItem.addEventListener('mouseout', () => {
+    icon.classList.add('text-primary');
+  });
+});

@@ -78,46 +78,28 @@ public class RegisterController extends HttpServlet {
             throws ServletException, IOException {
         try {
             String name = request.getParameter("name");
-            String dob = request.getParameter("dob");
-            String phno = request.getParameter("phone");
-            String gender = request.getParameter("gender");
-            String address = request.getParameter("address");
             String email = request.getParameter("email");
             String password = request.getParameter("password");
-            String check = request.getParameter("check");
-
-
+    
             HttpSession session = request.getSession();
             User us = new User();
             us.setUserName(name);
-            us.setPhone(phno);
-            // Assuming dob is in YYYY-MM-DD format
-            LocalDate dobLocalDate = LocalDate.parse(dob);
-            Date dobDate = java.sql.Date.valueOf(dobLocalDate);
-            us.setDoB(dobDate);
-            Boolean gender2 = Boolean.parseBoolean(gender);
-            us.setGender(gender2);
-            us.setAddress(address);
             us.setEmail(email);
             us.setPassword(password);
 
-            if (check != null) {
+          
                 UserDAO dao = new UserDAO((Connection) DBConnect.getConn());
                 boolean f = dao.userRegister(us);
                 if (f) {
 //                  System.out.println("User Register Sucess...");
                     session.setAttribute("succMsg", "Registration Sucessfully..");
-                    response.sendRedirect("register.jsp");
+                    response.sendRedirect("index.html");
                 } else {
 //                  System.out.println("Something went wrong on server....");
                     session.setAttribute("failedMsg", "Something went wrong on sever..");
-                    response.sendRedirect("register.jsp");
+                    response.sendRedirect("login.jsp");
                 }
-            } else {
-//                          System.out.println(name+email+phno+password+check);
-                session.setAttribute("failedMsg", "Please check Agree & Terms Condition");
-                response.sendRedirect("register.jsp");
-            }
+            
 
         } catch (Exception e) {
             e.printStackTrace();

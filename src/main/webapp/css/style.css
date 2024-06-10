@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 /********** Template CSS **********/
 :root {
@@ -64,6 +65,11 @@
 .btn-color:hover{
     opacity:0.8
 }
+.welcome-img{
+    box-shadow: 5px 5px 10.5px 2px rgb(3, 0, 50);
+}
+
+
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -155,7 +161,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary) !important;
+    color: rgb(17, 110, 233)!important;
 }
 
 .navbar-light .navbar-brand img {
@@ -212,7 +218,7 @@
         height: 2px;
         bottom: -1px;
         left: 50%;
-        background: var(--primary);
+        background:linear-gradient(to right, #020153,#001a67, #0b48cd);
         transition: .5s;
     }
 
@@ -242,54 +248,17 @@
 
 
 /*** Section Title ***/
-.section-title {
-    position: relative;
-    display: inline-block;
-    text-transform: uppercase;
-}
 
-.section-title::before {
-    position: absolute;
-    content: "";
-    width: calc(100% + 80px);
-    height: 2px;
-    top: 4px;
-    left: -40px;
-    background: var(--primary);
-    z-index: -1;
-}
-
-.section-title::after {
-    position: absolute;
-    content: "";
-    width: calc(100% + 120px);
-    height: 2px;
-    bottom: 5px;
-    left: -60px;
-    background: var(--primary);
-    z-index: -1;
-}
-
-.section-title.text-start::before {
-    width: calc(100% + 40px);
-    left: 0;
-}
-
-.section-title.text-start::after {
-    width: calc(100% + 60px);
-    left: 0;
-}
 
 
 /*** Service ***/
 .service-item {
-    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    box-shadow: 1px 1px 45px rgba(12, 1, 109, 0.08);
     transition: .5s;
 }
 
 .service-item:hover {
-    background: var(--primary);
-}
+    background: linear-gradient(to right, #000428, #0d71c9);}
 
 .service-item * {
     transition: .5s;
@@ -402,8 +371,8 @@
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item {
-    background: var(--primary) !important;
-    border-color: var(--primary) !important;
+    background: linear-gradient(to right, #000428, #004e92);
+    border-color: linear-gradient(to right, #000428, #004e92);
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item * {
@@ -429,8 +398,8 @@
 }
 
 .testimonial-carousel .owl-dot.active {
-    background: var(--primary);
-    border-color: var(--primary);
+    background: linear-gradient(to right, #000428, #004e92);
+    border-color: linear-gradient(to right, #000428, #004e92);
 }
 
 

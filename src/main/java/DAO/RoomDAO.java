@@ -44,8 +44,5 @@ public class RoomDAO {
         }
         return list;
     }
-
-    
-     
 }
 
