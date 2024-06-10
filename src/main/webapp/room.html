@@ -32,7 +32,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="main-color-web">
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -70,9 +70,14 @@
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
             <a href="" class="navbar-brand p-0">
-                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>FPT Paradise</h1>
+                <h1 class="m-0">
+                  <div class="wrapper invert">
+                      <span data-text="FPT"></span>
+                      <span data-text="PARADISE"></span>
+                  </div>
+                </h1>
                 <!-- <img src="img/logo.png" alt="Logo"> -->
-            </a>
+              </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
             </button>
@@ -229,22 +234,73 @@
 
 
     <!-- Booking Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container-xxl py-5 wow fadeInUp booking-input" data-wow-delay="0.1s">
         <div class="container">
-            <div class="booking p-5">
+            <div class="p-5">
                 <div class="row g-5 align-items-center">
-                    <div class="col-md-6 text-white">
-                        <h6 class="text-white text-uppercase">Booking</h6>
-                        <h1 class="text-white mb-4">Online Booking</h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <div class="col-md-12">
+                        <form action="./build.html" method="get">
+                            <div class="row g-3">
+                              <div class="col-md-6">
+                                <div class="form-floating input-label-color">
+                                    <input
+                                    type="date"
+                                    class="form-control bg-transparent"
+                                    id="name"
+                                    placeholder="Check in"
+                                    />
+                                    <label for="name">Check in</label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-floating input-label-color">
+                                    <input
+                                    type="date"
+                                    class="form-control bg-transparent"
+                                    id="email"
+                                    placeholder="Your Email"
+                                    />
+                                    <label for="email">Check out</label>
+                                </div>
+                              </div>
+                              
+                              <div class="col-md-12">
+                                <div class="form-floating input-label-color">
+                                  <select class="form-select bg-transparent" id="select1">
+                                    <option value="1">Standard</option>
+                                    <option value="2">Premium</option>
+                                    <option value="3">Deluxe</option>
+                                  </select>
+                                  <label for="select1">Choose a room</label>
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="form-floating request-message">
+                                  <textarea
+                                    class="form-control bg-transparent request-message-text"
+                                    placeholder="Special Request"
+                                    id="message"
+                                    style="height: 100px"
+                                  ></textarea>
+                                  <label for="message">Direct Request</label>
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <button
+                                  class="btn btn-outline-light w-100 py-3"
+                                  type="submit"
+                                >
+                                  Book Now
+                                </button>
+                              </div>
+                            </div>
+                          </form>   
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Booking Start -->
-
 
     <!-- Process Start -->
     <div class="container-xxl py-5">
