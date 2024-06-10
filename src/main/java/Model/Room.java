@@ -12,17 +12,21 @@ public class Room {
     private int roomId;
     private String roomtype;
     private int capacity;
-    private double price;
+    private float price;
     private String status;
     private String messages;
 
-    public Room(int roomId, String roomtype, int capacity, double price, String status, String messages) {
+    public Room(int roomId, String roomtype, int capacity, float price, String status, String messages) {
         this.roomId = roomId;
         this.roomtype = roomtype;
         this.capacity = capacity;
         this.price = price;
         this.status = status;
         this.messages = messages;
+    }
+
+    public Room() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     public int getRoomId() {
@@ -53,7 +57,7 @@ public class Room {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(float price) {
         this.price = price;
     }
 
@@ -77,4 +81,9 @@ public class Room {
     public String toString() {
         return "Room{" + "roomId=" + roomId + ", roomtype=" + roomtype + ", capacity=" + capacity + ", price=" + price + ", status=" + status + ", messages=" + messages + '}';
     }
+
+    public Room() {
+        
+    }
+    
 }
