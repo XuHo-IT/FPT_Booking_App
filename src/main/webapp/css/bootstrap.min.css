@@ -2572,9 +2572,9 @@ fieldset:disabled .btn {
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
   color: #000;
-  background-color: #98c33a;
-  border-color: #92bf2e;
-  box-shadow: 0 0 0 0.25rem rgba(114, 156, 20, 0.5);
+  background-color: linear-gradient(to right, #000428, #004e92);
+  border-color: linear-gradient(to right, #000428, #004e92);
+  box-shadow: 0 0 0 0.25rem rgb(0, 9, 91);
 }
 .btn-check:checked + .btn-primary,
 .btn-check:active + .btn-primary,
@@ -2582,21 +2582,22 @@ fieldset:disabled .btn {
 .btn-primary.active,
 .show > .btn-primary.dropdown-toggle {
   color: #000;
-  background-color: #9ec645;
-  border-color: #92bf2e;
+  background-color: linear-gradient(to right, #000428, #004e92);
+  border-color: linear-gradient(to right, #000428, #004e92);
+  opacity:0.5;
 }
 .btn-check:checked + .btn-primary:focus,
 .btn-check:active + .btn-primary:focus,
 .btn-primary:active:focus,
 .btn-primary.active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(114, 156, 20, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(0,9,91);
 }
 .btn-primary:disabled,
-.btn-primary.disabled {
+.btn-primary.disabled { 
   color: #000;
-  background-color: #86b817;
-  border-color: #86b817;
+  background-color: linear-gradient(to right, #000428, #004e92);
+  border-color: #004e92;
 }
 .btn-secondary {
   color: #000;

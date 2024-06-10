@@ -371,8 +371,8 @@
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item {
-    background: var(--primary) !important;
-    border-color: var(--primary) !important;
+    background: linear-gradient(to right, #000428, #004e92);
+    border-color: linear-gradient(to right, #000428, #004e92);
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item * {
@@ -398,8 +398,8 @@
 }
 
 .testimonial-carousel .owl-dot.active {
-    background: var(--primary);
-    border-color: var(--primary);
+    background: linear-gradient(to right, #000428, #004e92);
+    border-color: linear-gradient(to right, #000428, #004e92);
 }
 
 
