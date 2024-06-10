@@ -77,4 +77,8 @@ public class Room {
     public String toString() {
         return "Room{" + "roomId=" + roomId + ", roomtype=" + roomtype + ", capacity=" + capacity + ", price=" + price + ", status=" + status + ", messages=" + messages + '}';
     }
+
+    public Room() {
+    }
+    
 }
