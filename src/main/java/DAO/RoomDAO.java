@@ -27,7 +27,6 @@ public class RoomDAO {
         try {
             String query = "select * from rooms";
             pstmt = this.con.prepareStatement(query);
-            
             rs = pstmt.executeQuery();
             while (rs.next()) {
                 Room room = new Room();
@@ -45,5 +44,8 @@ public class RoomDAO {
         }
         return list;
     }
+
+    
+     
 }
 
