@@ -3086,7 +3086,6 @@ fieldset:disabled .btn {
   background:linear-gradient(to right bottom,rgb(1, 1, 150),rgb(29, 29, 252),rgb(35, 204, 255));
   border-color: #000000;
   border-radius: 10px;
-  margin-top: 20px;
 }
 .btn-outline-light:hover {
   color:rgb(33, 196, 255);
