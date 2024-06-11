@@ -79,12 +79,12 @@ public class LoginController extends HttpServlet {
                 User us = new User();
                 us.setUserName("admin");
                 session.setAttribute("userobj", us);
-                response.sendRedirect("index.jsp");
+                response.sendRedirect("index.html");
             } else {    
                 User us = dao.login(email, password);
                 if (us != null) {
                     session.setAttribute("userobj", us);
-                    response.sendRedirect("index.jsp");
+                    response.sendRedirect("index.html");
                 } else {
                     session.setAttribute("failedMsg", "Email and/or Password Invalid");
                     response.sendRedirect("login.jsp");
