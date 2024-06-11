@@ -26,7 +26,7 @@ public class Room {
     }
 
     public Room() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+  
     }
 
     public int getRoomId() {
@@ -82,8 +82,6 @@ public class Room {
         return "Room{" + "roomId=" + roomId + ", roomtype=" + roomtype + ", capacity=" + capacity + ", price=" + price + ", status=" + status + ", messages=" + messages + '}';
     }
 
-    public Room() {
-        
-    }
+   
     
 }

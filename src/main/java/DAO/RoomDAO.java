@@ -25,7 +25,7 @@ public class RoomDAO {
      public List<Room> Rooms() {
         List<Room> list = new ArrayList<>();
         try {
-            String query = "select * from rooms";
+            String query = "select * from Room";
             pstmt = this.con.prepareStatement(query);
             rs = pstmt.executeQuery();
             while (rs.next()) {
