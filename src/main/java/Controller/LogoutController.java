@@ -54,7 +54,15 @@ public class LogoutController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        processRequest(request, response);
+         try{
+          HttpSession session = request.getSession();
+          session.removeAttribute("currentUser");
+          HttpSession session2 = request.getSession();
+          session2.setAttribute("succMsg", "Logout Successfully");
+          response.sendRedirect("login.jsp");
+       }catch(Exception e){
+           e.printStackTrace();
+       }
     } 
 
     /** 
@@ -67,15 +75,7 @@ public class LogoutController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-          try{
-          HttpSession session = request.getSession();
-          session.removeAttribute("userobj");
-          HttpSession session2 = request.getSession();
-          session2.setAttribute("succMsg", "Logout Successfully");
-          response.sendRedirect("login.jsp");
-       }catch(Exception e){
-           e.printStackTrace();
-       }
+         processRequest(request, response);
     }
 
     /** 
