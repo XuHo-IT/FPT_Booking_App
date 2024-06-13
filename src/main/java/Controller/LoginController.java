@@ -78,12 +78,12 @@ public class LoginController extends HttpServlet {
             if ("admin@gmail.com".equals(email) && "admin".equals(password)) {
                 User us = new User();
                 us.setUserName("admin");
-                session.setAttribute("userobj", us);
+                session.setAttribute("currentUser", us);
                 response.sendRedirect("index.jsp");
             } else {    
                 User us = dao.login(email, password);
                 if (us != null) {
-                    session.setAttribute("userobj", us);
+                    session.setAttribute("currentUser", us);
                     response.sendRedirect("index.jsp");
                 } else {
                     session.setAttribute("failedMsg", "Email and/or Password Invalid");
