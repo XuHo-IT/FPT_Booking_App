@@ -16,10 +16,11 @@ public class Bill {
     private String resortAddress;
     private Date dateIn;
     private Date dateOut;
-    private int price;
+    private float price;
     private String roomType;
-    //constructor
-    public Bill(String user, int billNo, int peopleNumber, String resortAddress, Date dateIn, Date dateOut, int price, String roomType) {
+
+    
+    public Bill(String user, int billNo, int peopleNumber, String resortAddress, Date dateIn, Date dateOut, float price, String roomType) {
       this.user = user;
       this.billNo = billNo;
       this.peopleNumber = peopleNumber;
@@ -82,7 +83,7 @@ public class Bill {
       this.dateOut = dateOut;
    }
 
-   public int getPrice() {
+   public float getPrice() {
       return price;
    }
 

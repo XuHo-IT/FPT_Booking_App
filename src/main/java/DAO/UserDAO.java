@@ -4,10 +4,16 @@
  */
 package DAO;
 
+import DBConnect.DBConnect;
 import Model.User;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -15,7 +21,8 @@ import java.sql.ResultSet;
  */
 public class UserDAO {
 
-   
+   private PreparedStatement pstmt;
+    private ResultSet rs;
     private final Connection conn;
      public UserDAO(Connection conn) {
         this.conn = conn;
@@ -54,5 +61,24 @@ public class UserDAO {
             e.printStackTrace();
         }
         return us;
+    }
+        public List<User> getUsers() {
+        List<User> list = new ArrayList<>();
+        try {
+            String query = "SELECT userId, userName, email, password FROM [Booking].[dbo].[User]";
+            pstmt = this.conn.prepareStatement(query);
+            rs = pstmt.executeQuery();
+            while (rs.next()) {
+                User user = new User();
+                user.setId(rs.getInt("userId"));
+                user.setUserName(rs.getString("userName"));
+                user.setEmail(rs.getString("email"));
+                user.setPassword(rs.getString("password"));
+                list.add(user);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
     }
 }

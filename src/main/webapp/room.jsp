@@ -84,7 +84,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="index.jsp" class="nav-item nav-link">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
                     <a href="room.jsp" class="nav-item nav-link active">Rooms</a>
@@ -125,59 +125,63 @@
 
 
    <!-- Room Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Rooms</h6>
-                <h1 class="mb-5">Awesome Rooms</h1>
-            </div>
-           
-            <div class="row g-4 justify-content-center">
-                  <%
-                RoomDAO dao = new RoomDAO(DBConnect.getConn());
-                List<Room> list = dao.Rooms();
-                for(Room room: list){
-                %>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="room-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/room-1.jpg" alt="">
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">Rooms</h6>
+            <h1 class="mb-5">Awesome Rooms</h1>
+        </div>
+       
+        <div class="row g-4 justify-content-center">
+            <%
+            RoomDAO dao = new RoomDAO(DBConnect.getConn());
+            List<Room> list = dao.Rooms();
+            for(Room room: list){
+            %>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="room-item">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="img/room-1.jpg" alt="">
+                    </div>
+                   
+                    <div class="d-flex border-bottom">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i><%=room.getRoomtype()%></small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>...</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i><%=room.getCapacity()%></small>
+                    </div>
+                    <div class="text-center p-4">
+                        <h3 class="mb-0">$<%=room.getPrice()%> per night</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
                         </div>
-                       
-                        <div class="d-flex border-bottom">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i><%=room.getRoomtype()%></small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>...</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i><%=room.getCapacity()%></small>
-                        </div>
-                        <div class="text-center p-4">
-                            <h3 class="mb-0">$100.00</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                            <p>Cozy room with essential amenities, perfect for a comfortable stay with a garden view.</p>
-                            <div class="d-flex justify-content-center mb-2">
-
-                                <a
-                                  href="bill.jsp"
-                                  class="btn btn-sm btn-color p-sm-2 px-3"
-                                  style="border-radius: 30px"
-                                  >Book Now</a
-                                >
-                            </div>
+                        <p>Cozy room with essential amenities, perfect for a comfortable stay with a garden view.</p>
+                        <div class="d-flex justify-content-center mb-2">
+                            <form action="BillController" method="post">
+                                <input type="hidden" name="roomId" value="<%= room.getRoomId() %>">
+                                <label for="checkin">Check-in:</label>
+                                <input type="date" name="checkin" required>
+                                <br>
+                                <label for="checkout">Check-out:</label>
+                                <input type="date" name="checkout" required>
+                                <br>
+                                <button type="submit" class="btn btn-sm btn-color p-sm-2 px-3" style="border-radius: 30px">Book Now</button>
+                            </form>
                         </div>
                     </div>
                 </div>
-                          <% 
-        } 
-        %>
             </div>
+            <% 
+            } 
+            %>
         </div>
     </div>
-    <!-- room End -->
+</div>
+<!-- Room End -->
+
 
 
     <!-- Booking Start -->
